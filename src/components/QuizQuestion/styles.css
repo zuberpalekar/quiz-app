@@ -1,0 +1,15 @@
+.questionContainer {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.optionsContainer {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.option {
+    margin-right: 4px;
+}
+
+.marginTop {
+    margin-top: 16px;
+}
