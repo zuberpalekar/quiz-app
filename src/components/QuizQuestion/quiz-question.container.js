@@ -3,7 +3,7 @@ import QuizQuestion from './quiz-question.presentation';
 
 const mapStateToProps = (state) => {
 	return {
-		currentQuestion : state.questions.list[0]
+		currentQuestion : state.questions.selectedQuestion
 	};
 };
 

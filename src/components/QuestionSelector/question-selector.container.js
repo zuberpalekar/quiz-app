@@ -1,12 +1,15 @@
 import {connect} from 'react-redux';
 import QuestionSelector from './question-selector.presentation';
+import {ActionCreators} from "../../actions/index";
 
 const mapStateToProps = (state) => {
 	return {};
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {};
+	return {
+		selectQuestion: (question_id) => {dispatch(ActionCreators.selectQuestion(question_id))}
+	};
 };
 
 

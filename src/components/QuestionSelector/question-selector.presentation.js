@@ -9,6 +9,13 @@ export default class QuestionSelector extends Component {
 		super(props);
 	}
 
+	onQuestionSelected = () => {
+		let question_id = document.getElementById('question_id').value;
+		question_id = parseInt(question_id);
+		this.props.selectQuestion(question_id);
+		document.getElementById('question_id').value = '';
+	};
+
 	render() {
 		return (
 			<div className={'questionSelectorContainer'}>
@@ -20,6 +27,7 @@ export default class QuestionSelector extends Component {
 					<Button
 						className={'marginStart'}
 						type={'button'}
+						onClick={() => this.onQuestionSelected()}
 					>Submit</Button>
 				</Form>
 				<Button>Clear</Button>
