@@ -3,6 +3,7 @@ import styles from './styles.css';
 import logo from '../../logo.svg';
 import Header from "../Header/header.container";
 import QuizQuestion from "../QuizQuestion/quiz-question.container";
+import QuestionSelector from "../QuestionSelector/question-selector.container";
 
 
 export default class HomeScreen extends Component {
@@ -17,6 +18,9 @@ export default class HomeScreen extends Component {
 				<Header></Header>
 				<div>
 					<QuizQuestion/>
+				</div>
+				<div className={'footer'}>
+					<QuestionSelector/>
 				</div>
 				{/*<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo"/>
