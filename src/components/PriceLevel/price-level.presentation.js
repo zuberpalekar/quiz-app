@@ -1,31 +1,33 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
-import {Alert, Badge} from 'reactstrap';
+import { Alert, Badge } from 'reactstrap';
 
 
 export default class PriceLevel extends Component {
-	constructor(props) {
-		super(props);
-	}
+    constructor(props) {
+        super(props);
+    }
 
 
-	render() {
+    render() {
 
-		return (
-			<div className="priceLevelContainer">
-				{
-					this.props.gameStage.price_list.map((price) => {
-						return (
-							<Badge
-								key={price}
-								className={'block marginTop'}
-								color={this.props.gameStage.won >= price ? 'success' :'light'}>
-								Rps. {price}
-							</Badge>
-						)
-					})
-				}
-			</div>
-		);
-	}
+        return (
+            <div className="priceLevelContainer">
+                <div className="spanContainer">
+                    {
+                        this.props.gameStage.price_list.map((price) => {
+                            return (
+                                <Badge
+                                    key={price}
+                                    className={'block marginTop'}
+                                    color={this.props.gameStage.won >= price ? 'success' : 'light'}>
+                                    Rs. {price}
+                                </Badge>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        );
+    }
 }

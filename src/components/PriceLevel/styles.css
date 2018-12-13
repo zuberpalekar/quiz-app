@@ -1,8 +1,27 @@
 .priceLevelContainer {
-    border: 1px solid #ddd;
-    padding: 16px;
-    flex: 1;
+    border-left: 3px solid #091015;
+    padding: 0px 20px;
+    width: 300px;
+    background-color: #091015;
 }
+
+.spanContainer{
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .block {
     display: block;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid darkgrey;
+    border-radius: 20px;
+    width: 255px;
+}
+
+.badge-success {
+    border-color: #57bc90 !important;
+    background-color: #57bc90 !important;
 }

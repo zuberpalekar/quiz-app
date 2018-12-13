@@ -1,5 +1,5 @@
 .App-header {
-    background-color: #282c34;
+    background-color: #EAC67A;
     min-height: 10vh;
     display: flex;
     flex-direction: row;
@@ -8,10 +8,11 @@
     color: white;
     padding-left: 16px;
     padding-right: 16px;
+    display: none;
 }
 .headerTitle {
 
 }
 .lifelineStatusContainer {
-
+    display: none;
 }

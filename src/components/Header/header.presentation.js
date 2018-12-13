@@ -14,7 +14,7 @@ export default class Header extends Component {
 				<div className={"headerTitle"}>
 					<h3>The Quiz</h3>
 				</div>
-				<div className={"lifelineStatusContainer"}>
+                <div className={"lifelineStatusContainer"}>
 					<p>Life line status shown here</p>
 				</div>
 			</div>
