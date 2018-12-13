@@ -1,0 +1,8 @@
+.priceLevelContainer {
+    border: 1px solid #ddd;
+    padding: 16px;
+    flex: 1;
+}
+.block {
+    display: block;
+}

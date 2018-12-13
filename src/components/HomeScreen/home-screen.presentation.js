@@ -4,6 +4,7 @@ import logo from '../../logo.svg';
 import Header from "../Header/header.container";
 import QuizQuestion from "../QuizQuestion/quiz-question.container";
 import QuestionSelector from "../QuestionSelector/question-selector.container";
+import PriceLevel from "../PriceLevel/price-level.container";
 
 
 export default class HomeScreen extends Component {
@@ -16,8 +17,9 @@ export default class HomeScreen extends Component {
 		return (
 			<div className="App">
 				<Header></Header>
-				<div>
+				<div className={'column'}>
 					<QuizQuestion/>
+					<PriceLevel/>
 				</div>
 				<div className={'footer'}>
 					<QuestionSelector/>

@@ -1,5 +1,6 @@
 import {connect} from 'react-redux';
 import QuizQuestion from './quiz-question.presentation';
+import {ActionCreators} from "../../actions/index";
 
 const mapStateToProps = (state) => {
 	return {
@@ -8,7 +9,9 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {};
+	return {
+
+	};
 };
 
 
