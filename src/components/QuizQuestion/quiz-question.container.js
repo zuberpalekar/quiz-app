@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-
+		questionAnswered : (question, isCorrect) => dispatch(ActionCreators.questionAnswered(question, isCorrect))
 	};
 };
 

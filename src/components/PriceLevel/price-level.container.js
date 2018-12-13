@@ -2,7 +2,9 @@ import {connect} from 'react-redux';
 import PriceLevel from './price-level.presentation';
 
 const mapStateToProps = (state) => {
-	return {};
+	return {
+		gameStage : state.gameStage
+	};
 };
 
 const mapDispatchToProps = (dispatch) => {

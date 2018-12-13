@@ -13,9 +13,24 @@ export default class QuizQuestion extends Component {
 		}
 	}
 
+	componentDidUpdate(prevProps) {
+		if (!prevProps.currentQuestion || !this.props.currentQuestion) {
+			return;
+		}
+		if (prevProps.currentQuestion.id !== this.props.currentQuestion.id) {
+			// question change
+			this.setState({
+				selectedAnswer: '',
+				isCorrect: false,
+			});
+		}
+	}
+
+
 	onOptionSelect = (value) => {
 		console.log(value);
 		let isCorrect = this.props.currentQuestion.correct_answer === value;
+		this.props.questionAnswered(this.props.currentQuestion, isCorrect);
 		this.setState({
 			selectedAnswer: value,
 			isCorrect: isCorrect

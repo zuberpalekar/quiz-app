@@ -10,26 +10,21 @@ export default class PriceLevel extends Component {
 
 
 	render() {
+
 		return (
-			<div class="priceLevelContainer">
-				<Badge className={'block marginTop'} color={'light'}>
-					Rps. 30
-				</Badge>
-				<Badge className={'block marginTop'} color={'light'}>
-					Rps. 30
-				</Badge>
-				<Badge className={'block marginTop'} color={'light'}>
-					Rps. 30
-				</Badge>
-				<Badge className={'block marginTop'} color={'primary'}>
-					Rps. 20
-				</Badge>
-				<Badge className={'block marginTop'} color={'primary'}>
-					Rps. 10
-				</Badge>
-				<Badge className={'block marginTop'} color={'primary'}>
-					Rps. 1
-				</Badge>
+			<div className="priceLevelContainer">
+				{
+					this.props.gameStage.price_list.map((price) => {
+						return (
+							<Badge
+								key={price}
+								className={'block marginTop'}
+								color={this.props.gameStage.won >= price ? 'success' :'light'}>
+								Rps. {price}
+							</Badge>
+						)
+					})
+				}
 			</div>
 		);
 	}
